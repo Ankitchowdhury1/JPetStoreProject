@@ -22,7 +22,8 @@ import Registration.SignIn;
 
 
 public class addtocartTest {
-
+	
+	
 	WebDriver driver;
 	SignIn signIn;
     JPetSearch search;
@@ -49,7 +50,7 @@ public class addtocartTest {
     	extent.attachReporter(htmlReporter);
     	ExtentTest test = extent.createTest("Verifying Add to cart", "Checking the Cart");
     	
-    	
+    	// For Signing in
     	signIn.signIn().click();
 		signIn.enterUsername().sendKeys("sayan2567");
 		signIn.enterPassword().clear();
